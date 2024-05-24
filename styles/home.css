@@ -1,0 +1,24 @@
+/* styles-home.css */
+
+/* Add minimalist styles for the home page here */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 15px; /* Utilizing Bootstrap's container class */
+    max-width: 1140px; /* Adjusted to Bootstrap's container max-width */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}

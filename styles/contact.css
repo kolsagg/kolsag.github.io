@@ -1,0 +1,89 @@
+/* styles-contact.css */
+
+/* Add minimalist styles for the contact page here */
+.container {
+    padding: 0 15px; /* Utilizing Bootstrap's container class */
+    max-width: 1140px; /* Adjusted to Bootstrap's container max-width */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#follow-me.container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#follow-me.btn-primary {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+#follow-me.btn-dark {
+    background-color: #333;
+    border-color: #333;
+}
+
+body {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add CSS transitions for smooth fading */
+
+/* Style the alert */
+#success-alert {
+    max-width: 300px;
+    font-size: 12px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    margin: 0 auto; /* Add this line to center the alert horizontally */
+    margin-bottom: 15px; /* Add this line to create space between the alert and the form */
+    position: fixed; /* Add this line to position the alert relative to the viewport */
+    bottom: 0; /* Add this line to position the alert at the bottom */
+    left: 50%; /* Add this line to position the alert horizontally */
+    transform: translateX(-50%); /* Add this line to center the alert horizontally */
+    text-align: center; /* Add this line to center the text */
+}
+
+/* Hide the alert when its opacity is 0 */
+#success-alert.fade:not(.show) {
+    opacity: 0;
+    pointer-events: none; /* Ensure the alert is not clickable while hidden */
+}
